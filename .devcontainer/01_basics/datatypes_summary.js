@@ -28,3 +28,17 @@ const temp=function(){
 };
 
 console.log(typeof temp);
+
+/////stack(primitive) heap(non primitive)
+let namee="krishna";
+let anamee=namee;            // a <- b but a="radhika" then a="radhika" .....
+anamee="radhika";
+console.log(namee);
+console.log(anamee);
+ 
+let userone={email:"krishna.125766@gmail.com",upi:"krishsehgal20"};
+let usertwo=userone;
+usertwo.email="radhika@gmail.com";
+console.log(userone.email);           //change dono mei hojayega ek tarikhe se upper wala hi concept lag gya
+console.log(usertwo.email);
+
